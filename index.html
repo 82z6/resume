@@ -3,140 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Cloud DevOps Engineer</title>
+    <title>PDF Viewer</title>
     <style>
-        :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --text-primary: #c9d1d9;
-            --text-secondary: #8b949e;
-            --accent: #58a6ff;
-            --border: #30363d;
-            --shadow: rgba(0, 0, 0, 0.5);
-        }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
         }
-        
-        header {
-            background-color: var(--bg-secondary);
-            padding: 1.5rem 2rem;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .title-section h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
-        
-        .title-section p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-        
-        .action-buttons {
-            display: flex;
-            gap: 0.75rem;
-        }
-        
-        .btn {
-            padding: 0.6rem 1.2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 0.875rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            border: 1px solid var(--border);
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            display: inline-block;
-        }
-        
-        .btn:hover {
-            background-color: var(--bg-secondary);
-            border-color: var(--accent);
-        }
-        
-        .btn-primary {
-            background-color: var(--accent);
-            color: #0d1117;
-            border-color: var(--accent);
-        }
-        
-        .btn-primary:hover {
-            background-color: #1f6fc4;
-        }
-        
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            background-color: var(--bg-primary);
-        }
-        
-        .pdf-viewer {
-            width: 100%;
-            max-width: 900px;
-            height: calc(100vh - 160px);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            overflow: hidden;
-            background-color: #1e1e1e;
-            box-shadow: 0 8px 24px var(--shadow);
-        }
-        
-        embed {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
-        
-        footer {
-            background-color: var(--bg-secondary);
-            padding: 1rem 2rem;
+        h1 {
             text-align: center;
-            border-top: 1px solid var(--border);
-            color: var(--text-secondary);
-            font-size: 0.85rem;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
         }
-        
-        @media (max-width: 768px) {
-            header {
-                padding: 1rem;
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .pdf-viewer {
-                height: calc(100vh - 180px);
-            }
+        embed {
+            flex: 1;
+            width: 100%;
+            border: none;
         }
     </style>
 </head>
-<body> 
-    <main>
-        <div class="pdf-viewer">
-            <!-- IMPORTANT: Update 'resume.pdf' to your actual filename -->
-            <embed src="https://github.com/82z6/resume/blob/9fa4a13db07d3895e6d898c0b19792bf2fd756c0/Allen-Tran-Resume.pdf" type="application/pdf">
-        </div>
-    </main>
+<body>
+    <h1>My PDF Document</h1>
+    <embed src="https://github.com/82z6/resume/blob/main/Allen-Tran-Resume.pdf" type="application/pdf">
 </body>
 </html>
